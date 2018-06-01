@@ -6,7 +6,7 @@
         "api"
     ],
     "homepage": "https://github.com/KKBOX/OpenAPI-PHP",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "authors": [{
         "name": "Weizhong Yang",
         "email": "zonble@gmail.com",
