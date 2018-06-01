@@ -1,6 +1,17 @@
 {
     "name": "kkbox/kkboxopenapi",
     "description": "KKBOX Open API PHP SDK",
+    "keywords": [
+        "kkbox",
+        "api"
+    ],
+    "homepage": "https://github.com/KKBOX/OpenAPI-PHP",
+    "license": "Apache 2.0",
+    "authors": [{
+        "name": "Weizhong Yang",
+        "email": "zonble@gmail.com",
+        "homepage": "https://kkbox.com"
+    }],
     "autoload": {
         "psr-4": {
             "KKBOX\\KKBOXOpenAPI\\": "src/"

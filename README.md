@@ -4,7 +4,13 @@ The project helps you to access [KKBOX's Open API](https://developer.kkbox.com) 
 
 ## Installation
 
-You can install the package by using [Composer](https://getcomposer.org/). Please add to your `composer.json`.
+You can install the package by using [Composer](https://getcomposer.org/).
+
+```
+composer require kkbox/kkboxopenapi kkbox/kkboxopenapi
+```
+
+To use the development version, please add to your `composer.json`.
 
 ```json
 {
@@ -14,7 +20,7 @@ You can install the package by using [Composer](https://getcomposer.org/). Pleas
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:zonble/OpenAPI-PHP.git"
+      "url": "git@github.com:kkbox/OpenAPI-PHP.git"
     }
   ]
 }
