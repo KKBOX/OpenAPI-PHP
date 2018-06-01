@@ -50,7 +50,7 @@ class OpenAPITest extends TestCase
         $this->assertTrue($track->explicitness !== null);
         $this->assertTrue($track->available_territories !== null);
         // $this->assertTrue($track->album !== null);
-        if ($track->album) {
+        if (property_exists($track, 'album')) {
             $this->validateAlbum($track->album);
         }
     }
