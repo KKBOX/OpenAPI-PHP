@@ -368,6 +368,10 @@ class OpenAPITest extends TestCase
         $this->openAPI->fetchAndUpdateAccessToken();
         $response = $this->openAPI->search('Love');
         $this->assertTrue($response->getStatusCode() === 200);
+
+        $response = $this->openAPI->search('愛');
+        $this->assertTrue($response->getStatusCode() === 200);
+
         $searchResults = json_decode($response->getBody());
 
         $this->assertTrue($searchResults->tracks !== null);

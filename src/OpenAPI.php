@@ -434,6 +434,7 @@ class OpenAPI
         $keyword = trim($keyword);
         assert(strlen($keyword) > 0);
         $types = implode(',', $searchTypes);
+        $keyword = urlencode($keyword);
         $url = self::API_END_POINT . "/search?q=$keyword&type=$types&territory=$territory&offset=$offset&limit=$limit";
         return $this->fetch($url);
     }
