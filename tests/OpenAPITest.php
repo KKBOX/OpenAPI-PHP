@@ -11,8 +11,8 @@ class OpenAPITest extends TestCase
 
     protected function setUp()
     {
-        $clientID = '5fd35360d795498b6ac424fc9cb38fe7';
-        $clientSecret = '8bb68d0d1c2b483794ee1a978c9d0b5d';
+        $clientID = '8c097e8307b124a3cbb989a9840c866c';
+        $clientSecret = '93281a550d4ecac0e15518264133d7db';
         $this->openAPI = new OpenAPI($clientID, $clientSecret);
     }
 
