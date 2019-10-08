@@ -1,6 +1,9 @@
 # KKBOX Open API PHP SDK
 
-The project helps you to access [KKBOX's Open API](https://developer.kkbox.com) using PHP programming languages.
+[![Actions Status](https://github.com/KKBOX/OpenAPI-PHP/workflows/Test/badge.svg)](https://github.com/KKBOX/OpenAPI-PHP/actions)
+
+The project helps you to access [KKBOX's Open API](https://developer.kkbox.com)
+using PHP programming languages.
 
 ## Installation
 
@@ -32,7 +35,9 @@ And then run `composer install`.
 
 ### instantiation
 
-To start using the SDK, you need to register your app in KKBOX's [developer site](https://developer.kkbox.com) and obtain a valid client ID and client secret. Then, you can create an instance of `OpenAPI`.
+To start using the SDK, you need to register your app in KKBOX's
+[developer site](https://developer.kkbox.com) and obtain a valid
+client ID and client secret. Then, you can create an instance of `OpenAPI`.
 
 ```php
 use KKBOX\KKBOXOpenAPI\OpenAPI;
@@ -58,7 +63,10 @@ When you are ready, you can make API calls like to search, or to fetch informati
 $response = $openAPI->search('Love');
 ```
 
-The SDK adopts [Guzzle HTTP client](https://github.com/guzzle/guzzle), and the response objects conform to [PSR-7 HTTP message interfaces](https://www.php-fig.org/psr/psr-7/). So, if you want to get the JSON objects from the API response, you may have code like
+The SDK adopts [Guzzle HTTP client](https://github.com/guzzle/guzzle), and
+the response objects conform to [PSR-7 HTTP message interfaces](https://www.php-fig.org/psr/psr-7/).
+So, if you want to get the JSON objects from the API response, you may
+have code like
 
 ```php
 $response = $openAPI->search('Love');
@@ -72,7 +80,8 @@ Just run `vendor/bin/phpunit`.
 
 ## License
 
-Copyright 2018 KKBOX Technologies Limited
+```
+Copyright 2018-2019 KKBOX Technologies Limited
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -85,3 +94,4 @@ Copyright 2018 KKBOX Technologies Limited
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+```
