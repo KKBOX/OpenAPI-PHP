@@ -26,5 +26,7 @@ jobs:
         run: composer -V
       - name: Check PHP Extensions
         run: php -m
+      - name: Composer Install
+        run: composer install
       - name: Run Test
         run: ./vendor/phpunit/phpunit/phpunit
